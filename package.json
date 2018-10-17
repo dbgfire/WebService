@@ -1,0 +1,19 @@
+{
+  "name": "webservice",
+  "version": "0.0.1",
+  "description": "Mise en place d'un front angular avec un back end pour une archicteture mircroservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbgfire/WebService.git"
+  },
+  "author": "A.G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbgfire/WebService/issues"
+  },
+  "homepage": "https://github.com/dbgfire/WebService#readme"
+}
