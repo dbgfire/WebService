@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/dbgfire/WebService/issues"
   },
-  "homepage": "https://github.com/dbgfire/WebService#readme"
+  "homepage": "https://github.com/dbgfire/WebService#readme",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }, "//": "mocha is our preference, but you can use any test runner you like",
+  "scripts": {
+    "test": "mocha"
+  }
+  
 }
