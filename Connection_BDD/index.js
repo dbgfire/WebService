@@ -1,12 +1,22 @@
-var mysql = require('mysql');
+'use strict';
 
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "root"
+// [START app]
+const express = require('express');
+const app = express();
+const con =require('./connection');
+//import { con } from 'connection';
+app.get('/', (req, res) => {
+  con().then (()=>{res.send('Connection success');}).catch(()=>{res.send('Connection faild');})
+  
 });
+app.post('/', function (req, res) {
+  con().then (()=>{res.send('Connection success');}).catch(()=>{res.send('Connection faild');})
+});
+// Listen to the App Engine-specified port, or 8080 otherwise
+const PORT = process.env.PORT || 8095;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}...`);
+});
+// [END app]
 
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-});
+module.exports = app;
