@@ -1,0 +1,31 @@
+{
+  "name": "webservice",
+  "version": "0.0.1",
+  "description": "Mise en place d'un front angular avec un back end pour une archicteture mircroservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbgfire/WebService.git"
+  },
+  "author": "A.G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbgfire/WebService/issues"
+  },
+  "homepage": "https://github.com/dbgfire/WebService#readme",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "nodemon": "^1.18.4"
+  },
+  "//": "mocha is our preference, but you can use any test runner you like",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^2.2.16"
+  }
+}
