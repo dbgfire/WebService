@@ -7,7 +7,6 @@ import {RouterModule}from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { InscriptionComponent } from './inscription/inscription.component';
-import { ConnexionComponent } from './connexion/connexion.component';
 import { PrincipalComponent } from './principal/principal.component';
 
 
@@ -16,8 +15,6 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent },
 
   { path: 'inscription', component: InscriptionComponent },
-
-  { path: 'connexion', component: ConnexionComponent},
   
   { path: 'principal', component: PrincipalComponent},
 
@@ -29,7 +26,6 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     InscriptionComponent,
-    ConnexionComponent,
     PrincipalComponent
   ],
   imports: [
