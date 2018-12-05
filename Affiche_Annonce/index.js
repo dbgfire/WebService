@@ -26,8 +26,14 @@ app
 
 app.post('/book/', upload.array(), function (req, res) {
   console.log(req.body)
+  insert('test', 'test', 'test')
+    .then(res => {
+      res.send('Add success')
+    })
+    .catch(() => {
+      res.send('Add failed')
+    })
   // res.json(req.body)
-  res.send('Add succes')
 })
 // Listen to the App Engine-specified port, or 8080 otherwise
 const PORT = process.env.PORT || 8080
