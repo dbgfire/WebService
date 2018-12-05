@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-
 app
   .route('/book/:id')
   .get(function (req, res) {
-    res.send('Get a book' + req.params.id)
+    res.send('Get a book ' + req.params.id)
   })
   .put(function (req, res) {
     res.send('Update the book')
@@ -26,14 +26,13 @@ app
 
 app.post('/book/', upload.array(), function (req, res) {
   console.log(req.body)
-  res.json(req.body)
-  // res.send('Add a book')
+  // res.json(req.body)
+  res.send('Add succes')
 })
 // Listen to the App Engine-specified port, or 8080 otherwise
 const PORT = process.env.PORT || 8080
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}...`)
 })
-// [END app]
 
 module.exports = app
